@@ -1,0 +1,11 @@
+<br>
+<div class="row">
+    <div class="card col-s3" style="width: 18rem; margin: 10px;" *ngFor="let juego of dataSource">
+        <img class="card-img-top" src="{{juego.foto}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"><b>{{juego.nombre}}</b></h5>
+            <p class="card-text">{{juego.descripcion}}</p>
+            <a href="/agregar-juego/{{juego.id}}" class="btn btn-outline-primary">Editar</a>
+        </div>
+    </div>
+</div>
